@@ -1,0 +1,160 @@
+:root{
+    --primary-color:#4daf54;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height:100vh;
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card{
+    height: 390px;
+    width: 320px;
+    background-color: #272d40;
+    margin: 120px auto;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+
+.card__icon--heart {
+    left:20px;
+    color:#fff;
+    font-size: 26px;
+    position: absolute;
+}
+
+.card__icon--cart {
+    left :unset;
+    right:20px;
+    color:#fff;
+    font-size: 26px;
+    position: absolute;
+}
+
+.card__img{
+    width: 90%;
+    transition: 0.5s;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card__title
+{
+    color:var(--primary-color);
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card__prices {
+    color:#fff;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card__size, .card__color {
+    display: flex;
+    align-items: center;
+    color:#fff;
+    margin:10px 0;
+    font-size: 16px;
+    transition: 0.5s;
+    
+   
+    
+}
+.card__size span {
+    background-color:#dadada;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 8px;
+    color: #000;
+    cursor: pointer;
+}
+.card__color span {
+    width:20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+    
+
+.card__color--green{
+    background-color:green;
+    ;
+}
+
+.card__color--red{
+    background-color: red;
+}
+
+.card__color--black{
+    background-color: black;
+    ;
+}
+
+.cart_button {
+    transition: 0.5s;
+}
+
+.cart_button button {
+    
+    background-color: var(--primary-color);
+    color:#fff;
+    outline:none;
+    padding: 8px 20px;
+    border:none;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card:hover .card__img {
+    transform: translateY(-90px) rotate(-20deg);
+}
+
+.card:hover .card__title {
+    transform: translateY(-70px) translateX(-40px);
+    
+}
+.card:hover .card__prices {
+    transform: translateY(-70px) translateX(-110px);
+
+}
+
+.card--hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 0.5s;
+    transition: 0.5s;
+    /* margin-top: 150px; */
+    position: absolute;
+    bottom: -300px;
+
+    
+
+}
+.card:hover .card--hidden{
+    opacity: 1;
+    visibility: visible;
+    /* margin-top: -10px; */
+    bottom: 40px;
+}

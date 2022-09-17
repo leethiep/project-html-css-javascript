@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(rgb(0,0,0, 0.5),rgb(0,0,0,0.9)) ,url(./cool.jpg) no-repeat  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+#box {
+    background: url(./cool.jpg) no-repeat center/cover;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.hot {
+    background: linear-gradient(rgb(0,0,0, 0.5),rgb(0,0,0,0.9)) ,url(./hot.png) no-repeat center/cover  ;
+}
+.hot #box {
+    
+    background: url(./hot.png) no-repeat center/cover;
+}
+.warn {
+    background: linear-gradient(rgb(0,0,0, 0.5),rgb(0,0,0,0.9)) ,url(./warn.jpg) no-repeat  center/cover;
+}
+.warn #box {
+   
+    background: url(./warn.jpg) no-repeat center/cover;
+
+}
+.cool {
+    background: linear-gradient(rgb(0,0,0, 0.5),rgb(0,0,0,0.9)) ,url(./cool.jpg) no-repeat center/cover ;
+
+}
+.cool #box {
+    background: url(./cool.jpg) no-repeat center/cover;
+
+}
+
+.search {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 0 15px 0 15px;
+    transition: 0.5s;
+    background-color: rgba(255,255,255,0.5);
+    width: 300px;
+    font-size: 16px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+}
+.search:focus{
+    border-radius:15px 0 15px 0;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.place {
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px;
+}
+
+.time {
+    font-size: 20px;
+    
+}
+
+.temperature {
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 40px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.main-desc {
+    font-size: 40px;
+
+}
+.more-desc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+.description .more-desc >div {
+    display: flex;
+	flex-direction: column;
+}
+
+.description .more-desc >div > span {
+    margin: 15px;
+}
+.hide {
+    opacity :0;
+    visibility :hidden ;
+}

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\Day 5 Search Box"
+		},
+		{
+			"path": "..\\Day 6 Detect Pressed Key"
+		},
+		{
+			"path": "..\\Day 7 Search tags"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Day 9 Weather"
+	}
+}

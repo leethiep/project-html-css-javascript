@@ -1,0 +1,88 @@
+:root{
+    --pink-color :#e26e70
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(
+      45deg,
+      rgb(65, 88, 208) 0%,
+      rgb(200, 80, 192) 50%,
+      rgb(255, 204, 112) 100%
+    );
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+   
+.open-modal {
+    position: fixed;
+    top :50%;
+    right: 50%;
+    transform : translate(-50%,-50%);
+    outline:none;
+    border:none;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    
+}
+.modal-hide {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+
+}
+.modal--iner {
+    width: 420px;
+    background-color: #fff;
+    margin: 200px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.modal--header {
+    background-color: var(--pink-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 17px;
+}
+.header--icon {
+    font-size: 25px;
+    cursor:pointer;
+}
+.modal--body {
+    padding: 15px;
+     
+
+}
+.modal--body h3 {
+    color :var(--pink-color);
+    font-size: 25px;
+    
+}
+.modal--body p{
+    font-size: 15px;
+    margin: 15px 0;
+}
+.close-btn {
+    background-color: var(--pink-color);
+    right:0;
+    outline:none;
+    border:none;
+    padding:  5px 10px;
+    border-radius: 5px;
+    color:#fff;
+    float :right;
+    margin: 15px 0;
+    cursor: pointer;
+
+}
